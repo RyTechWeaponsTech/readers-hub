@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"/>
+    <link rel="shortcut icon" href="{{url_for('static', filename='images/NEEERRRDDDD.png')}}" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>{{book.title}}</h1>
+        <p><strong>Author:</strong>{{book.author}}</p>
+        <p><strong>Year:</strong>{{book.year}}</p>
+        <p><strong>Description:</strong>{{book.description}}</p>
+        <div class="classic-indicator">
+            {% if book.year < 1950 %}
+            <p><strong>This book is considered a classic</strong></p>
+            {% else %}
+            <p><strong>This book is not considered a classic</strong></p>
+            {% endif %}
+        </div>
+        <button onclick="history.back()">Back to Book List</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"/>
+    <link rel="shortcut icon" href="{{url_for('static', filename='images/NEEERRRDDDD.png')}}" type="image/x-icon">
+</head>
+<body>
+    <h2>{{title}}</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in books %}
+            <tr>
+                <td><a href="/book/{{book.id}}">{{book.title}}</a></td>
+                <td>{{book.author}}</td>
+                <td>{{book.year}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
