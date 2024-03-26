@@ -11,7 +11,21 @@ books = [
         "author": "F. Scott Fitzgerald",
         "year": 1925,
         "description": "A novel about American Dream.",
-    }
+    },
+    {
+        "id": 2,
+        "title": "Harry Potter: and The Sorcerer's Stone",
+        "author": "J.K. Rowling",
+        "year": 1997,
+        "description": "The book is about 11 year old Harry Potter, who receives a letter saying that he is invited to attend Hogwarts, school of witchcraft and wizardry. He then learns that a powerful wizard and his minions are after the sorcerer's stone that will make this evil wizard immortal and undefeatable.",
+    },
+    {
+        "id": 3,
+        "title": "Sherlock Holmes: A Study in Scarlet",
+        "author": "Arthur Conan Doyle",
+        "year": 1887,
+        "description": "The story marks the first appearance of Sherlock Holmes and Dr. Watson, who would become the most famous detective duo in literature.",
+    },
 ]
 
 
